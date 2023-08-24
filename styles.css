@@ -39,3 +39,126 @@ body {
 .scroll-down i{
     color: red;
 }
+.hero {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Style the left and right columns */
+  .left {
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+
+  .right {
+    padding: 20px;
+  }
+
+  /* Style the hero logo */
+  .hero-logo img {
+    max-width: 100%;
+  }
+
+  /* Style the text content */
+  .left p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .left .explore a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .socials a {
+    color: #555;
+    margin-right: 10px;
+  }
+
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .image-container img {
+    max-width: 100%;
+  }
+
+  .paragraph {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+    color: #555;
+  }
+  This CSS will help you achieve a basic layout and styling for the image, paragraph, and social icons in the left column. You can adjust the styles to match your design preferences.
+
+
+
+
+  User
+  i want to center the row vertically
+  ChatGPT
+
+  2 / 2
+
+  Certainly! To center the row vertically, you can use the flexbox properties in CSS. Here's how you can modify the HTML and CSS to achieve that:
+
+  HTML:
+
+  html
+  Copy code
+  <section class="container vh-100 d-flex align-items-center">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="left-content">
+          <!-- Left column content here -->
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Right column content here -->
+      </div>
+    </div>
+  </section>
+  CSS:
+
+  css
+  Copy code
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .image-container img {
+    max-width: 100%;
+  }
+
+  .paragraph {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+    color: #555;
+  }
+
+
+
+
