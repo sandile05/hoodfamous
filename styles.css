@@ -100,39 +100,6 @@ body {
     margin-right: 10px;
     color: #555;
   }
-  This CSS will help you achieve a basic layout and styling for the image, paragraph, and social icons in the left column. You can adjust the styles to match your design preferences.
-
-
-
-
-  User
-  i want to center the row vertically
-  ChatGPT
-
-  2 / 2
-
-  Certainly! To center the row vertically, you can use the flexbox properties in CSS. Here's how you can modify the HTML and CSS to achieve that:
-
-  HTML:
-
-  html
-  Copy code
-  <section class="container vh-100 d-flex align-items-center">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="left-content">
-          <!-- Left column content here -->
-        </div>
-      </div>
-      <div class="col-md-6">
-        <!-- Right column content here -->
-      </div>
-    </div>
-  </section>
-  CSS:
-
-  css
-  Copy code
   .left-content {
     display: flex;
     flex-direction: column;
@@ -159,6 +126,26 @@ body {
     color: #555;
   }
 
+  .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
 
 
