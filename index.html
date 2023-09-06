@@ -4,125 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HoodFamous</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
 <body>
-    <head>
-        <nav class="navbar navbar-expand-lg navbar-light bg-info p-3">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Hood Famous*</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-info p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HXXDFAMOUS*</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-              <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto ">
-                  <li class="nav-item">
-                    <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      About Us
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
-                      <li><a class="dropdown-item" href="#">Our Story</a></li>
-                      <li><a class="dropdown-item" href="#">Contact us</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">Artists</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">Gallery</a>
-                  </li>
-
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#">Talents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Contact us</a></li>
                 </ul>
-                <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
-                  <li class="nav-item mx-2">
-                    <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-google-plus-square"></i></a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-twitter"></i></a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-facebook-square"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </head>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+              <li class="nav-item mx-2">
+                <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link text-dark h5" href="" target="blank"><i class="bi bi-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    <main>
-        <section id="home" class="home d-flex justify-content-center align-items-center vh-95">
-            <div class="home-content text-center">
-                <h1>Welcome To Hood Famous</h1>
-                  <h3>A hub for undescovered talent</h3>
-                  <h3>and media personilities</h3>
-                  <button class="mt-3 btn btn-primary">Explore</button>
-                  <div class="scroll-down">
-                    <a href="#hero"><i class="mt-5 fa-solid fa-angles-down fa-fade"></i></a>
-                  </div>
-                </div>
-          </section>
-          <section class="container-fluid d-md-flex justify-content-center align-items-center vh-100" id="hero">
-            <div class="row flex-md-row">
-              <div class="col-md-6">
-                <!-- Left column content here -->
-                <div class="left-content">
-                    <div class="image-container">
-                      <img src="hf-logo2.png" alt="Image">
-                    </div>
-                    <div class="paragraph">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, eveniet.</p>
-                    </div>
-                    <div class="social-icons">
-                      <a href="#"><i class="bx bxl-instagram"></i></a>
-                      <a href="#"><i class="bx bxl-twitter"></i></a>
-                      <a href="#"><i class="bx bxl-youtube"></i></a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                <!-- Right column content here -->
-                <div id="carouselExample" class="carousel slide d-flex align-items-center" data-bs-touch="true" data-bs-ride="carousel" data-bs-interval="3000">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="art.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="music.webp" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="dancers.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-            </div>
-          </section>
-          <section class="quote"></section>
-    </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
