@@ -23,3 +23,16 @@ body{
   height: 100%;
 }
 
+.quote-section {
+  background-color: rgba(26, 20, 109, 0.3);/* Set desired background color */
+  padding: 50px 0; /* Adjust padding as needed */
+  text-align: center;
+}
+
+/* Centered quote text */
+.quote-text {
+  font-size: 24px; /* Adjust font size as needed */
+  margin: 0 auto; /* Center the text horizontally */
+  max-width: 800px; /* Limit the maximum width of the quote text */
+}
+
