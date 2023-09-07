@@ -31,8 +31,27 @@ body{
 
 /* Centered quote text */
 .quote-text {
-  font-size: 24px; /* Adjust font size as needed */
+  font-size: 24px;
   margin: 0 auto; /* Center the text horizontally */
   max-width: 800px; /* Limit the maximum width of the quote text */
+}
+
+
+.carousel-container {
+  height: 65vh; /* Adjust the height as needed */
+}
+.carousel-inner img {
+  max-width: 700px; /* Set the maximum width to 700px */
+  width: 100%;
+  display: block; /* Ensures the image is a block-level element for centering */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.carousel-indicators li {
+  color: transparent/* Hide the number text */
+}
+
+.carousel-indicators {
+  bottom: -20px; /* Adjust the negative value to move the indicators down as needed */
 }
 
