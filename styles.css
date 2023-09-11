@@ -106,3 +106,15 @@ body{
 .icon{
   font-size: 36px;
 }
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: none;
+}
+
+#back-to-top.visible {
+  display: block;
+}
