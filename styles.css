@@ -36,6 +36,8 @@ body{
   max-width: 800px; /* Limit the maximum width of the quote text */
 }
 
+/* explore section  */
+
 .carousel-inner img {
   max-width: 700px; /* Set the maximum width to 700px */
   width: 100%;
@@ -51,3 +53,6 @@ body{
   bottom: -20px; /* Adjust the negative value to move the indicators down as needed */
 }
 
+#explore{
+  border-bottom: 1px solid red;
+}
