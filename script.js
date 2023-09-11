@@ -7,5 +7,3 @@ document.querySelectorAll('.navbar-nav a.nav-link').forEach(function(navLink) {
       }
     });
   });
-
-
