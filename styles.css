@@ -98,3 +98,11 @@ body{
   border-radius: 50px;
   transition: all 0.3s;
 }
+
+.arrow-down{
+  margin-top: 150px;
+}
+
+.icon{
+  font-size: 36px;
+}
