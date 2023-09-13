@@ -111,7 +111,7 @@ body {
 
 #back-to-top {
   position: fixed;
-  bottom: 35px;
+  bottom: 55px;
   right: 20px;
   z-index: 999;
   display: none;
