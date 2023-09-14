@@ -1,5 +1,20 @@
+// Function to handle smooth scrolling to a section
+function scrollToSection(targetId) {
+  const targetSection = document.querySelector(targetId);
+  if (targetSection) {
+    window.scrollTo({
+      top: targetSection.offsetTop - document.querySelector('.navbar').offsetHeight,
+      behavior: "smooth",
+    });
+  }
+}
+
 document.querySelectorAll(".navbar-nav a.nav-link").forEach(function (navLink) {
-  navLink.addEventListener("click", function () {
+  navLink.addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent default anchor link behavior
+    const targetId = navLink.getAttribute("href");
+    scrollToSection(targetId);
+
     // Close the navbar by toggling the collapse class
     const navbar = document.querySelector(".navbar-collapse");
     if (navbar.classList.contains("show")) {
@@ -8,25 +23,46 @@ document.querySelectorAll(".navbar-nav a.nav-link").forEach(function (navLink) {
   });
 });
 
-const tooltips = document.querySelectorAll(".tt");
-tooltips.forEach((t) => {
-  new bootstrap.Tooltip(t);
+// Adjust scroll position for initial load
+window.addEventListener("load", function () {
+  const initialTarget = window.location.hash;
+  if (initialTarget) {
+    scrollToSection(initialTarget);
+  }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const backToTopButton = document.getElementById("back-to-top");
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
 
-  // Add a click event listener to scroll back to the "home" section
-  backToTopButton.addEventListener("click", function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+// Function to handle section visibility
+function handleSectionVisibility(entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('section-visible');
+    }
   });
+}
 
-  // Show or hide the button based on the scroll position
-  window.addEventListener("scroll", function () {
-      if (window.scrollY > 300) {
-          backToTopButton.classList.add("visible");
-      } else {
-          backToTopButton.classList.remove("visible");
-      }
-  });
+// Create an intersection observer instance
+const observer = new IntersectionObserver(handleSectionVisibility, {
+  root: null, // viewport
+  rootMargin: '0px',
+  threshold: 0.5, // Trigger when 50% of the section is visible
 });
+
+
+
+// Observe each section
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
