@@ -31,38 +31,5 @@ window.addEventListener("load", function () {
   }
 });
 
-// Function to check if an element is in the viewport
-function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
 
-// Function to handle section visibility
-function handleSectionVisibility(entries) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('section-visible');
-    }
-  });
-}
-
-// Create an intersection observer instance
-const observer = new IntersectionObserver(handleSectionVisibility, {
-  root: null, // viewport
-  rootMargin: '0px',
-  threshold: 0.5, // Trigger when 50% of the section is visible
-});
-
-
-
-// Observe each section
-sections.forEach((section) => {
-  observer.observe(section);
-});
 
