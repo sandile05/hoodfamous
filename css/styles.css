@@ -1,5 +1,5 @@
 body{
-  background-image: url('./background.jpeg');
+  background-image: url('../assets/images/background.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -7,7 +7,7 @@ body{
 }
 
 .home{
-  background-image: url('./wall.jpeg');
+  background-image: url('../assets/images/wall.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -24,7 +24,7 @@ body{
 }
 
 .quote-section {
-  background: rgba(32, 33, 36, 0.1);/* Set desired background color */
+  background: rgba(32, 33, 36, 0.1);
   padding: 50px 0; /* Adjust padding as needed */
   text-align: center;
 }
@@ -50,12 +50,10 @@ body{
 }
 
 .carousel-indicators {
-  bottom: -20px; /* Adjust the negative value to move the indicators down as needed */
+  bottom: -20px;
 }
 
-/* #explore{
-  border-bottom: 1px solid red;
-} */
+
 
 /* about us section  */
 
