@@ -45,6 +45,7 @@ window.addEventListener("load", function () {
   if (initialTarget) {
     scrollToSection(initialTarget);
   }
+
 });
 
 
