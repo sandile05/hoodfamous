@@ -1,3 +1,19 @@
+$(document).ready(function() {
+  // Reference to the menu button, sidebar, content, and dim overlay
+  const $menuBtn = $('.menu-btn');
+  const $sidebar = $('.sidebar');
+  const $content = $('.content');
+  const $dimOverlay = $('.dim-overlay');
+
+  // Toggle the sidebar open/close
+  $menuBtn.on('click', function() {
+      $sidebar.toggleClass('open');
+      $content.toggleClass('open');
+      $dimOverlay.toggleClass('active');
+  });
+});
+
+
 // Function to handle smooth scrolling to a section
 function scrollToSection(targetId) {
   const targetSection = document.querySelector(targetId);
@@ -30,4 +46,5 @@ window.addEventListener("load", function () {
     scrollToSection(initialTarget);
   }
 });
+
 
