@@ -182,7 +182,19 @@ body{
   color:rgb(205, 212, 235)
 }
 
+@media (max-width: 767px) {
+  .custom-input {
+    width: 180px;
+    padding: 0.25rem;
+    font-size: 0.875rem;
+  }
+}
 
+@media (max-width: 400px) {
+  .custom-input {
+    width: 140px;
+  }
+}
 
 @media (min-width: 576px) {
   /* Medium screens and above (SM and MD) */
