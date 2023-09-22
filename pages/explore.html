@@ -24,13 +24,13 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-tertiary bg-light sticky-top p-3"
+      class="navbar navbar-expand-lg navbar-tertiary bg-light sticky-top p-2"
     >
       <div class="container-fluid text-center">
         <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasDark" role="button" aria-controls="offcanvasDark">
           <i class="bi bi-list menu-icon"></i>
         </a>
-        <a class="navbar-brand" href="../index.html">HXXDFAMOUS</a>
+        <a class=" display-5" href="../index.html">HXXDFAMOUS</a>
 
         <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
           <li class="nav-item mx-2">
@@ -71,15 +71,24 @@
       </div>
     </section>
 
-    <div class="offcanvas offcanvas-start  text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
+    <div class="offcanvas offcanvas-start show text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasDarkLabel">HXXDFAMOUS</h5>
+        <h5 class="offcanvas-title display-6" id="offcanvasDarkLabel">HXXDFAMOUS</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <ul>
-          <li>Blog</li>
+        <ul class="list-group">
+          <a class="nav-link" href="../index.html#about"><li class="list-group-item bg-dark text-light">About Us</li></a>
+          <a class="nav-link" href="#"><li class="list-group-item bg-dark text-light">Blog</li></a>
+          <a class="nav-link" href="#"><li class="list-group-item bg-dark text-light">Events</li></a>
+          <a class="nav-link" href="#"><li class="list-group-item bg-dark text-light">Gallery</li></a>
         </ul>
+
+        <div class="offcanvas-socials">
+          <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light ms-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-light ms-3"><i class="bi bi-youtube"></i></a>
+        </div>
       </div>
     </div>
 

@@ -160,7 +160,25 @@ body{
   margin-right: auto;
 }
 
+/* offcanvas  */
 
+.offcanvas-socials{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.list-group-item {
+  border: none;
+  font-size: 20px;
+
+}
+
+a{
+  text-decoration: line-through;
+  color:rgb(32, 33, 36)
+}
 
 @media (min-width: 576px) {
   /* Medium screens and above (SM and MD) */
@@ -172,6 +190,6 @@ body{
 @media (max-width: 575.98px) {
   /* Small screens (XS) */
   .mySwiper {
-      height: 80vh;
+      height: 70vh;
   }
 }
