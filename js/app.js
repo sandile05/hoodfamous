@@ -24,6 +24,17 @@ function handleSectionVisibility(entries) {
   });
 }
 
+// Close the navbar when clicking outside of it
+document.addEventListener("click", (e) => {
+    const navbar = document.querySelector(".navbar-collapse");
+    if (
+      e.target.closest(".navbar") === null &&
+      navbar.classList.contains("show")
+    ) {
+      navbar.classList.remove("show");
+    }
+  });
+
 // Select all navigation links and add click event listeners
 document.querySelectorAll(".navbar-nav a.nav-link").forEach((navLink) => {
   navLink.addEventListener("click", (e) => {
