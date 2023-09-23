@@ -1,16 +1,3 @@
-// Function to handle smooth scrolling to a section
-function scrollToSection(targetId) {
-  const targetSection = document.querySelector(targetId);
-  if (targetSection) {
-    window.scrollTo({
-      top: targetSection.offsetTop - document.querySelector('.navbar').offsetHeight,
-      behavior: "smooth",
-    });
-  }
-}
-
-
-
 // Define displayNames function in the global scope
 function displayNames(value) {
   input.value = value;
