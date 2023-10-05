@@ -1,3 +1,36 @@
+// Function to show profile cards based on category
+function showProfileCards(category) {
+  const profileCards = document.querySelectorAll('.card');
+
+  profileCards.forEach((card) => {
+    if (category === 'all' || card.classList.contains(category)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+// Function to filter cards based on input value
+function filterCards() {
+  const input = document.getElementById("input");
+  const searchValue = input.value.toLowerCase();
+  const profileCards = document.querySelectorAll('.card');
+
+  profileCards.forEach((card) => {
+    const artistName = card.querySelector('.artist-name').textContent.toLowerCase();
+    if (artistName.includes(searchValue)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+// Add click event listener to the search icon button
+const searchButton = document.querySelector('.bi-search');
+searchButton.addEventListener('click', filterCards);
+
 // Define displayNames function in the global scope
 function displayNames(value) {
   input.value = value;
@@ -16,7 +49,6 @@ document.addEventListener("click", function (event) {
 
 // Wait for the DOM to be ready
 $(document).ready(function () {
-
   // Array of names
   let names = ["Stans", "Sandile", "Sammy", "Ryxn", "Ryan", "Steve", "Rick Ross", "Sjava", "Ray Mystereo"];
 
@@ -32,8 +64,8 @@ $(document).ready(function () {
       }
     }
 
-     // Sort the suggestions
-     suggestions.sort();
+    // Sort the suggestions
+    suggestions.sort();
 
     // Display suggestions
     displaySuggestions(suggestions);
@@ -53,10 +85,15 @@ $(document).ready(function () {
       listItem.addEventListener("click", function () {
         input.value = suggestion;
         list.innerHTML = ""; // Clear suggestions
+        filterCards(); // Call the filterCards function when a list item is clicked
       });
 
       // Append suggestion item to the list
       list.appendChild(listItem);
     }
   }
+
+
 });
+
+
