@@ -27,9 +27,21 @@ function filterCards() {
   });
 }
 
+// Function to clear previous search results
+function clearSearchResults() {
+  const profileCards = document.querySelectorAll('.card');
+  profileCards.forEach((card) => {
+    card.style.display = 'block';
+  });
+}
+
 // Add click event listener to the search icon button
 const searchButton = document.querySelector('.bi-search');
-searchButton.addEventListener('click', filterCards);
+searchButton.addEventListener('click', function (e) {
+  e.preventDefault(); // Prevent the form from submitting
+  filterCards();
+  list.innerHTML = ""; // Clear suggestions
+});
 
 // Define displayNames function in the global scope
 function displayNames(value) {
@@ -48,9 +60,9 @@ document.addEventListener("click", function (event) {
 });
 
 // Wait for the DOM to be ready
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function () {
   // Array of names
-  let names = ["Stans", "Sandile", "Sammy", "Ryxn", "Ryan", "Steve", "Rick Ross", "Sjava", "Ray Mystereo"];
+  let names = ["Stans", "Sandile", "Sammy", "Ryxn", "Ryan", "Joseph Dary", "Steve", "Rick Ross", "Sjava", "Ray Mystereo"];
 
   // Input event listener for filtering names
   input.addEventListener("input", function () {
@@ -85,15 +97,12 @@ $(document).ready(function () {
       listItem.addEventListener("click", function () {
         input.value = suggestion;
         list.innerHTML = ""; // Clear suggestions
-        filterCards(); // Call the filterCards function when a list item is clicked
+        clearSearchResults(); // Clear previous search results
+        filterCards(); // Apply new filter
       });
 
       // Append suggestion item to the list
       list.appendChild(listItem);
     }
   }
-
-
 });
-
-
