@@ -61,26 +61,25 @@
 
   <section class="container bg-light artist-page">
     <div class="row justify-content-evenly">
+
       <div class="col-12 col-md-6">
-        <ul class="nav nav-tabs flex-column flex-md-row">
-          <li class="nav-item" onclick="showProfileCards('all')">
-            <a class="nav-link active" href="#">All</a>
-          </li>
-          <li class="nav-item" onclick="showProfileCards('creatives')">
-            <a class="nav-link" href="#">Creatives</a>
-          </li>
-          <li class="nav-item" onclick="showProfileCards('music')">
-            <a class="nav-link" href="#">Music</a>
-          </li>
-          <li class="nav-item" onclick="showProfileCards('public-figures')">
-            <a class="nav-link" href="#">Public Figures</a>
-          </li>
-          <li class="nav-item" onclick="showProfileCards('performers')">
-            <a class="nav-link" href="#">Performers</a>
-          </li>
-        </ul>
+        <div class="d-flex flex-column">
+          <div class="d-flex align-items-center mb-3">
+            <div class="filter-wrapper">
+              <i class="bi bi-filter mr-2"></i>
+              <select class="form-select custom-dropdown" onchange="showProfileCards(this.value)">
+                <option value="all">All</option>
+                <option value="creatives">Creatives</option>
+                <option value="music">Music</option>
+                <option value="public-figures">Public Figures</option>
+                <option value="performers">Performers</option>
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+
+
     <div class="cards" id="profileCards">
       <div class="card music">
         <div class="imgBx">
