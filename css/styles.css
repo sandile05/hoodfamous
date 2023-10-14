@@ -25,8 +25,7 @@ body{
 
 .quote-section {
   background: rgba(38, 40, 46, 0.26);
-  padding: 50px 0; /* Adjust padding as needed */
-  text-align: center;
+  padding: 50px 0; /* Adjust padding as needed */er;
 }
 
 /* Centered quote text */
@@ -234,7 +233,7 @@ ul{
   justify-content: center;
   align-items: flex-start;
   width: 270px;
-  height: 300px;
+  height: 290px;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
@@ -243,7 +242,7 @@ ul{
 }
 
 .artist-page .card:hover{
-  height: 320px;
+  /* height: 320px; */
 }
 
 .artist-page .card .imgBx{
@@ -260,7 +259,7 @@ ul{
 }
 
 .artist-page .card:hover .imgBx{
-  top: -80px;
+  top: -67px;
   scale: 0.75;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
@@ -290,7 +289,7 @@ ul{
 }
 
 .artist-page .card:hover .content{
-  height: 250px;
+  height: 135px;
   top: 130px;
 }
 
@@ -308,44 +307,6 @@ ul{
   margin: 20px 0;
 }
 
-
-.card .popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 650px;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  z-index: 1;
-  transition: 0.5s;
-}
-
-.card .popup .popup-image{
-  height: 250px;
-  text-align: center;
-}
-.card .popup .popup-image img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-.card .popup .popup-content{
-  padding: 20px;
-  display: flex;
-}
-
-.card .popup .popup-content .left-content {
-  flex: 1;
-}
-
-.card .popup .popup-content .right-content {
-  flex: 1;
-}
 
 
 .filter-wrapper {
