@@ -64,7 +64,7 @@ document.addEventListener("click", function (event) {
 // Wait for the DOM to be ready
 document.addEventListener("DOMContentLoaded", function () {
   // Array of names
-  let names = ["John Doe", "Lesego", "Caroline", "Ryxn", "Rick", "Joseph Dary", "Previous Leon", "Jah Lady", "Cindy", "Hlompho", "Sfiso"];
+  let names = ["John Doe", "Lesego", "Caroline", "RYXN", "Rick", "Joseph Dary", "Previous Leon", "Jah Lady", "Cindy", "Hlompho", "Sfiso"];
 
   // Input event listener for filtering names
   input.addEventListener("input", function () {
@@ -86,27 +86,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Function to display suggestions
-  function displaySuggestions(suggestions) {
-    list.innerHTML = ""; // Clear previous suggestions
-    for (let suggestion of suggestions) {
-      // Create a suggestion item
-      let listItem = document.createElement("li");
-      listItem.classList.add("list-group-item", "list-items");
-      listItem.style.cursor = "pointer";
-      listItem.textContent = suggestion;
+function displaySuggestions(suggestions) {
+  list.innerHTML = ""; // Clear previous suggestions
+  for (let suggestion of suggestions) {
+    // Create a suggestion item
+    let listItem = document.createElement("li");
+    listItem.classList.add("list-group-item", "list-items");
+    listItem.style.cursor = "pointer";
+    listItem.textContent = suggestion;
 
-      // Add click event listener to populate input and close suggestions
-      listItem.addEventListener("click", function () {
-        input.value = suggestion;
-        list.innerHTML = ""; // Clear suggestions
-        clearSearchResults(); // Clear previous search results
-        filterCards(); // Apply new filter
-      });
+    // Add click event listener to populate input and close suggestions
+    listItem.addEventListener("click", function () {
+      input.value = suggestion;
+      list.innerHTML = ""; // Clear suggestions
+    });
 
-      // Append suggestion item to the list
-      list.appendChild(listItem);
-    }
+    // Append suggestion item to the list
+    list.appendChild(listItem);
   }
+}
 });
 
 $('.more-info-btn').on('click', function() {
