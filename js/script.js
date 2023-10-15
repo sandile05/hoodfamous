@@ -1,3 +1,35 @@
+const personData = {
+  "Joseph Dary": {
+      info: "Information about Joseph Dary.",
+      socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
+  },
+  "Jane": {
+      info: "Information about Jane.",
+      socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
+  },
+  "John": {
+      info: "Information about John.",
+      socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
+  }
+};
+
+$('.more-info-btn').on('click', function() {
+  const firstName = $(this).data('name');
+  const fullName = Object.keys(personData).find(name => name.startsWith(firstName));
+  const modalLabel = document.getElementById('modalLabel');
+  const modalInfo = document.getElementById('modal-info');
+  const socialLinks = document.getElementById('social-links');
+
+  // Set the modal title to the full name
+  modalLabel.textContent = fullName;
+
+  // Set modalInfo and socialLinks based on the person's data
+  modalInfo.textContent = personData[fullName].info;
+  socialLinks.innerHTML = personData[fullName].socialLinks;
+
+  $('#myModal').modal('show');
+});
+
 // Function to show profile cards based on category
 function showProfileCards(category) {
   const profileCards = document.querySelectorAll('.card');

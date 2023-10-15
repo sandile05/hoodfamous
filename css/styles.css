@@ -227,7 +227,7 @@ ul{
   margin: 0 auto;
 }
 
-.artist-page .card{
+.explore-page .card{
   position: relative;
   display: flex;
   justify-content: center;
@@ -243,7 +243,7 @@ ul{
 
 
 
-.artist-page .card .imgBx{
+.explore-page .card .imgBx{
   top: 20px;
   left: 15px;
   position: absolute;
@@ -256,17 +256,17 @@ ul{
   margin: 0 auto;
 }
 
-.artist-page .card:hover .imgBx{
+.explore-page .card:hover .imgBx{
   top: -67px;
   scale: 0.75;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
 
-.artist-page .card:hover{
+.explore-page .card:hover{
   z-index: 101;
 }
 
-.artist-page .card .imgBx img{
+.explore-page .card .imgBx img{
   position: absolute;
   top: 0;
   left: 0;
@@ -275,7 +275,7 @@ ul{
   object-fit: cover;
 }
 
-.artist-page .card .content{
+.explore-page .card .content{
   position: absolute;
   top: 252px;
   width: 100%;
@@ -286,22 +286,22 @@ ul{
   transition: 0.5s;
 }
 
-.artist-page .card:hover .content{
+.explore-page .card:hover .content{
   height: 135px;
   top: 130px;
 }
 
-.artist-page .card .content h3{
+.explore-page .card .content h3{
   font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.artist-page .card .content p{
+.explore-page .card .content p{
   margin-bottom: 10px;
 }
 
-.artist-page .card .content .socials{
+.explore-page .card .content .socials{
   margin: 20px 0;
 }
 

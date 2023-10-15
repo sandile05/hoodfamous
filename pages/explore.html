@@ -57,7 +57,7 @@
       </div>
   </section>
 
-  <section class="container artist-page">
+  <section class="container explore-page">
     <div class="row justify-content-evenly">
 
      <div class="filter-container">
@@ -89,7 +89,7 @@
           <h3 class="artist-name">Joseph Dary</h3>
           <p class="category">Music</p>
           <div class="text-center">
-            <a href="#" class="btn rey-btn mt-3">more info</a>
+            <a href="#" class="btn rey-btn mt-3 more-info-btn" data-name="Joseph Dary">more info</a>
         </div>
         </div>
       </div>
@@ -148,6 +148,24 @@
       </div>
     </div>
   </section>
+
+  <!-- Bootstrap Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <p id="modal-info"></p>
+              <div id="social-links"></div>
+          </div>
+      </div>
+  </div>
+</div>
 
   <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
     <div class="offcanvas-header">
