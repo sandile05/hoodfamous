@@ -3,14 +3,22 @@ const personData = {
       info: "Information about Joseph Dary.",
       socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
   },
-  "Jane": {
-      info: "Information about Jane.",
+  "RYXN": {
+      info: "Information about RYXN.",
       socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
   },
-  "John": {
-      info: "Information about John.",
+  "Hlompho": {
+      info: "Information about Hlompho.",
       socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
-  }
+  },
+  "Caroline": {
+    info: "Information about Caroline.",
+    socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
+  },
+  "Cindy": {
+    info: "Information about Cindy.",
+    socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
+}
 };
 
 $('.more-info-btn').on('click', function() {
