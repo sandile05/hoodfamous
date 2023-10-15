@@ -112,18 +112,18 @@ body{
   font-size: 36px;
 }
 
-#back-to-top {
-  position: fixed;
-  bottom: 35px;
-  right: 20px;
-  z-index: 999;
+button#back-to-top{
   display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
-
-#back-to-top.visible {
-  display: block;
-}
-
 
 
 
@@ -241,9 +241,7 @@ ul{
   margin: 15px;
 }
 
-.artist-page .card:hover{
-  /* height: 320px; */
-}
+
 
 .artist-page .card .imgBx{
   top: 20px;

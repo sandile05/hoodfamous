@@ -1,3 +1,16 @@
+window.addEventListener("scroll", function() {
+  var backToTopButton = document.getElementById("back-to-top");
+
+  // Show the "Back to Top" button when user scrolls more than 75vh
+  if (window.scrollY > 0.75 * window.innerHeight) {
+      backToTopButton.style.display = "block";
+  } else {
+      backToTopButton.style.display = "none";
+  }
+});
+
+
+
 // Function to handle smooth scrolling to a section
 function scrollToSection(targetId) {
   const targetSection = document.querySelector(targetId);
@@ -64,4 +77,6 @@ window.addEventListener("load", () => {
     scrollToSection(initialTarget);
   }
 });
+
+
 
