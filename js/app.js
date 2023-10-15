@@ -1,13 +1,3 @@
-window.addEventListener("scroll", function() {
-  var backToTopButton = document.getElementById("back-to-top");
-
-  // Show the "Back to Top" button when user scrolls more than 75vh
-  if (window.scrollY > 0.75 * window.innerHeight) {
-      backToTopButton.style.display = "block";
-  } else {
-      backToTopButton.style.display = "none";
-  }
-});
 
 
 
@@ -36,6 +26,38 @@ function handleSectionVisibility(entries) {
     }
   });
 }
+
+// Function to handle scrolling to the home section
+function scrollToHomeSection() {
+  const homeSection = document.querySelector(".home");
+  if (homeSection) {
+    const navbarHeight = document.querySelector(".navbar").offsetHeight;
+    window.scrollTo({
+      top: homeSection.offsetTop - navbarHeight,
+      behavior: "smooth",
+    });
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  var backToTopButton = document.getElementById("back-to-top");
+
+  // Show the "Back to Top" button when the user scrolls more than 75vh
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 0.75 * window.innerHeight) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  });
+
+  // click event listener to the "Back to Top" button
+  backToTopButton.addEventListener("click", function () {
+    scrollToHomeSection();
+  });
+});
+
+
 
 // Close the navbar when clicking outside of it
 document.addEventListener("click", (e) => {
