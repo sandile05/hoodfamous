@@ -40,7 +40,7 @@ document.addEventListener("click", function (event) {
 // Wait for the DOM to be ready
 document.addEventListener("DOMContentLoaded", function () {
   // Array of names
-  let names = ["Stans", "Sandile", "Sammy", "Ryxn", "Ryan", "Joseph Dary", "Steve", "Rick Ross", "Sjava", "Ray Mystereo"];
+  let names = ["John Doe", "Lesego", "Caroline", "Ryxn", "Rick", "Joseph Dary", "Previous Leon", "Jah Lady", "Cindy", "Hlompho", "Sfiso"];
 
   // Input event listener for filtering names
   input.addEventListener("input", function () {
