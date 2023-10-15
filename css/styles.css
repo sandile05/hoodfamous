@@ -366,4 +366,8 @@ ul{
   .mySwiper {
       height: 50vh;
   }
+
+  button#back-to-top{
+    bottom: 57px;
+  }
 }
