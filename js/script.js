@@ -18,6 +18,30 @@ const personData = {
   "Cindy": {
     info: "Information about Cindy.",
     socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
+  },
+  "John Doe": {
+    info: "Information about John Doe.",
+    socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
+  },
+  "Lesego": {
+    info: "Information about Lesego.",
+    socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
+  },
+  "Rick": {
+    info: "Information about Rick.",
+    socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
+  },
+  "Previous Leon": {
+    info: "Information about Previous Leon.",
+    socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
+  },
+  "Jah Lady": {
+    info: "Information about Jah Lady.",
+    socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
+  },
+  "Sfiso": {
+    info: "Information about Sfiso.",
+    socialLinks: "<a href='#'>Twitter</a> | <a href='#'>LinkedIn</a>"
   }
 };
 
