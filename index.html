@@ -234,7 +234,7 @@
                             <span class="input-group-text">
                                 <i class="bi bi-envelope-fill text-secondary"></i>
                             </span>
-                            <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                            <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" name="email" autocomplete="email" />
                             <!-- tooltip -->
                             <span class="input-group-text">
                                 <span class="tt" data-bs-placement="bottom"
@@ -248,7 +248,7 @@
                             <span class="input-group-text">
                                 <i class="bi bi-person-fill text-secondary"></i>
                             </span>
-                            <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+                            <input type="text" id="name" class="form-control" placeholder="e.g. Mario" name="first_name" autocomplete="given-name" />
                             <!-- tooltip -->
                             <span class="input-group-text">
                                 <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
@@ -259,8 +259,8 @@
 
                         <div class="mb-4 mt-5 form-floating">
                             <textarea class="form-control" id="message" style="height: 140px"
-                                placeholder="meaasge"></textarea>
-                            <label for="meaasge">Your message...</label>
+                                placeholder="message"></textarea>
+                            <label for="message">Your message...</label>
                         </div>
                         <div class="mb-4 form-check">
                             <input type="checkbox" class="form-check-input" id="subscribe" name="subscribe">
