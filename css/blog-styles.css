@@ -29,6 +29,7 @@ p{
     font-size: 1rem;
     font-family: 'Karla', sans-serif;
     line-height: 1.5rem;
+    color: #ffb4b4;
 }
 button{
     background: #6CAA7F;
@@ -48,10 +49,14 @@ hr{
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
 header .intro{
     position: relative;
+    height: 50vh;
+    background-image: url('../assets/images/blog-images/blog6.webp');
+    background-size: cover;
+    background-position: center;
 }
+
 
 header .intro .head{
     position: absolute;
@@ -59,3 +64,20 @@ header .intro .head{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.navbar .navbar-nav .nav-link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #2ecc71;
+    transition: width 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover::after{
+    width: 60%;
+    height: 2px;
+    background: #2ecc71;
+    transition: width 0.3s;
+    border-bottom: 2px solid #27ae60;
+}
+
