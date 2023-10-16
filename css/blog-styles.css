@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global  */
+
+h1{
+    font-size: 6.5vw;
+}
+h3{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+h4{
+    font-size: 1.1rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    word-spacing: 0.4vw;
+}
+h6{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #6CAA7F;
+}
+p{
+    font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.5rem;
+}
+button{
+    background: #6CAA7F;
+    border-style: none;
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+}
+hr{
+    background: #27ae60;
+    color: #27ae60;
+    height: 0.07rem;
+}
