@@ -44,3 +44,18 @@ hr{
     color: #27ae60;
     height: 0.07rem;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .intro{
+    position: relative;
+}
+
+header .intro .head{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
