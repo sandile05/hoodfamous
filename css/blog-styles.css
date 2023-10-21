@@ -121,3 +121,16 @@ header .intro .head{
     height: 2px;
     background: #2ecc71;
 }
+
+.subscription{
+    background: #defadb;
+}
+
+.subscription .row .sub input{
+    outline: none;
+    border: 1px solid #6caa7f;
+}
+
+.subscription .row .sub input::placeholder{
+    font-size: 0.9rem;
+}
