@@ -153,3 +153,8 @@ header .intro .head{
     color: #6caa7f;
     font-size: 0.8rem;
 }
+
+.blog .side3 .one{
+    height: 300px;
+    position: relative;
+}
