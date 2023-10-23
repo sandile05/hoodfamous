@@ -142,3 +142,14 @@ header .intro .head{
     text-decoration: none;
     border-style: none;
 }
+
+.blog .row .sidebar .side2 .row .sidetext h4{
+    font-size: 1rem;
+}
+
+.blog .row .sidebar .side2 .row .sidetext a{
+    text-decoration: none;
+    border-style: none;
+    color: #6caa7f;
+    font-size: 0.8rem;
+}
