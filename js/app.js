@@ -79,7 +79,12 @@ document.querySelectorAll(".navbar-nav a.nav-link").forEach((navLink) => {
     if (navLink.classList.contains("explore-link")) {
       // If it's the "Explore" link, navigate to the URL
       navigateToURL(navLink.getAttribute("href"));
-    } else {
+    }
+    else if (navLink.classList.contains("blog-link")) {
+      // If it's the "Blog" link, navigate to the URL
+      navigateToURL(navLink.getAttribute("href"));
+    }
+    else {
       // For other links, scroll to the section
       scrollToSection(targetId);
     }
