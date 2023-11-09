@@ -8,7 +8,6 @@
 }
 html,
 body {
-	background: linear-gradient(45deg, hsl(256, 28%, 86%), #200b30);
 	font-family: 'Inknut Antiqua', serif;
 }
 img {
@@ -22,9 +21,7 @@ img {
     cursor: pointer;
 }
 
-.navbar {
-    background-color: #343a40;
-}
+
 /* Main CSS */
 .grid-wrapper > div {
 	display: flex;
