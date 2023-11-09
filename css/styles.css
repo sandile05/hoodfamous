@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;700;900&family=Mulish:wght@400;700;900&display=swap');
+
+*{
+  font-family: 'Inknut Antiqua', serif;
+}
+
 body{
   background-image: url('../assets/images/background.jpeg');
   background-size: cover;
@@ -25,7 +31,7 @@ body{
 
 .quote-section {
   background: rgba(38, 40, 46, 0.26);
-  padding: 50px 0; /* Adjust padding as needed */er;
+  padding: 50px 0;
 }
 
 /* Centered quote text */
