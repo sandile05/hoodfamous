@@ -134,6 +134,10 @@ button#back-to-top{
   cursor: pointer;
 }
 
+footer a{
+  text-decoration: none;
+}
+
 
 
 
