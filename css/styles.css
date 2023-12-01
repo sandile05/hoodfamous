@@ -5,11 +5,23 @@
 }
 
 body{
+  position: relative;
   background-image: url('../assets/images/background-sky.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 100%;
+}
+
+body::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
 }
 
 .home{
@@ -21,7 +33,7 @@ body{
 
 .home::before {
   content: "";
-  background-color: rgba(26, 20, 109, 0.3);
+  background-color: rgba(98, 158, 173, 0.164);
   position: absolute;
   top: 0;
   left: 0;
@@ -30,7 +42,7 @@ body{
 }
 
 .quote-section {
-  background: rgba(32, 33, 36, 0.1);
+  background: rgba(74, 92, 148, 0.301);
   padding: 50px 0;
 }
 
@@ -61,6 +73,20 @@ body{
   bottom: -20px;
 }
 
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the last value for the opacity of the overlay */
+  z-index: 0;
+}
+
+.carousel-item h3{
+  z-index: 2;
+}
 
 
 /* about us section  */
@@ -80,7 +106,7 @@ body{
 }
 
 .sosmed-horizontal a i {
-  border: 1px solid #070707;
+  border: 1px solid #00b8b87c;
   border-radius: 50%;
   color: #070707;
   display: inline-block;
@@ -94,7 +120,7 @@ body{
 }
 
 .rey-btn {
-  border: 2px solid #070707;
+  border: 2px solid #00b8b87c;
   padding: 10px 40px;
   text-transform: uppercase;
   letter-spacing: 2px;
