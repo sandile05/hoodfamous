@@ -20,7 +20,7 @@ body::before{
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(78, 78, 78, 0.3);
   z-index: -1;
 }
 
@@ -42,7 +42,7 @@ body::before{
 }
 
 .quote-section {
-  background: rgba(74, 92, 148, 0.301);
+  background: rgba(107, 113, 119, 0.342);
   padding: 50px 0;
 }
 
@@ -144,7 +144,7 @@ body::before{
 }
 
 .contact{
-  background: rgba(32, 33, 36, 0.1);
+  background: rgba(107, 113, 119, 0.342);
 }
 
 button#back-to-top{
